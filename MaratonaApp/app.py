@@ -2,10 +2,14 @@ from model.Cliente import Cliente
 from model.Funcionario import Funcionario
 from model.Maratona import Maratona
 
-funcionario = Funcionario("Maria")
-cliente = Cliente("José")
+def main():
+  funcionario = Funcionario("Maria")
+  cliente = Cliente("José")
 
-maratona = Maratona()
+  maratona = Maratona()
 
-maratona.correr(cliente)
-maratona.correr(funcionario)
+  maratona.correr(cliente)
+  maratona.correr(funcionario)
+
+if __name__ == "__main__":
+  main()
